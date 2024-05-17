@@ -55,6 +55,9 @@ jobs:
 
       - uses: Swatinem/rust-cache@v2
 
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+
       # Test **all** crates in the workspace with all features.
       - name: test all --all-features
         run: |
